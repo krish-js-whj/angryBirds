@@ -13,7 +13,9 @@ var bg = "sprites/bg1.png";
 var score = 0;
 
 function preload() {
-    getBackgroundImg();
+    bg = "sprites/bg1.png";
+    backgroundImg = loadImage(bg);
+    console.log(backgroundImg);
 }
 
 function setup(){
@@ -49,7 +51,6 @@ function setup(){
 function draw(){
     if(backgroundImg)
         background(backgroundImg);
-    
         noStroke();
         textSize(35)
         fill("white")
@@ -107,17 +108,11 @@ function keyPressed(){
 }
 
 //async
-function getBackgroundImg(){
+//function getBackgroundImg(){
   //  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
  //   var responseJSON = await response.json();
 
  //   var datetime = responseJSON.datetime;
  //   var hour = datetime.slice(11,13);
-   
 
-        bg = "sprites/bg1.png";
-
-    backgroundImg = loadImage(bg);
-    console.log(backgroundImg);
-}
 
