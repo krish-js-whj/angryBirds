@@ -114,14 +114,10 @@ function getBackgroundImg(){
  //   var datetime = responseJSON.datetime;
  //   var hour = datetime.slice(11,13);
    
- hour=1800
-    if(hour>=0600 && hour<=1900){
+
         bg = "sprites/bg1.png";
-    }
-    else{
-        bg = "sprites/bg2.jpg";
-    }
 
     backgroundImg = loadImage(bg);
     console.log(backgroundImg);
 }
+
